@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #F4F4F4;
+}
+
+.shops {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.shop {
+  background: #fff;
+  border-radius: 15px;
+  border: 1px solid #CCCCCC;
+  box-shadow: 0px 4px 44px -20px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  max-width: 100%;
+}
+.shop__preview {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.shop__preview img {
+  width: 100%;
+}
+.shop__bottom {
+  padding: 10px 15px;
+}
+.shop__title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+.shop__link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 12px;
+  text-decoration: none;
+  color: #999999;
+}
+.shop__icon {
+  width: 45px;
+  height: 45px;
+}
+.shop__icon img {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+.shop__head {
+  display: flex;
+  gap: 0.8rem;
+}
+.shop__footer {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.shop__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background: #E7E7E7;
+  cursor: pointer;
+}
+.shop__btn:hover {
+  background: #dcdcdc;
+}
+.shop__btn img {
+  width: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,18 @@
+.wrapper {
+  display: flex;
+  padding-bottom: 50px !important;
+  padding-right: 30px !important;
+}
+.wrapper__right {
+  padding: 20px 20px 0 0;
+  width: 100%;
+}
+
+.container {
+  width: 1600px;
+  max-width: calc(100vw - 20px);
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=Layout.css.map */

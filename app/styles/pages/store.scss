@@ -1,0 +1,262 @@
+@import "../vars";
+
+.drawing {
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  margin: 25px;
+}
+
+.slick-slide {
+  width: 500px;
+}
+
+.slick-slider {
+  height: 330px;
+  margin-bottom: 3rem;
+}
+
+.slick-track, .slick-list {
+  height: 100%;
+}
+
+.module-page .slick-slider {
+  height: auto !important;
+}
+
+.modules {
+  display: grid;
+  row-gap: 1rem;
+  column-gap: 3rem;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  &.modules_one-col {
+    grid-template-columns: 1fr;
+  }
+}
+
+.module {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 18px -17px rgba(0, 0, 0, 0.25);
+  height: 120px;
+
+  &__terms {
+    img {
+      width: 23px;
+    }
+  }
+
+  &__title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    width: fit-content;
+    color: $font_color;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+
+  &__body {
+    font-size: 14px;
+    color: #7D7D7D;
+    line-height: 139.4%;
+    padding-right: 20px;
+    max-height: 35px;
+    overflow-y: hidden;
+  }
+
+  &__right {
+    flex-basis: calc(100% - 110px);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__left {
+    height: 100px;
+    flex-basis: 100px;
+  }
+
+  &__footer {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__img {
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-btn {
+    cursor: pointer;
+    border-radius: 5px;
+    background: $purple;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    padding: 5px 10px;
+    font-family: 'Montserrat', sans-serif;
+
+    img {
+      width: 20px;
+    }
+
+    &.module-btn_buyed {
+      background: #D2D2D2;
+      color: #4D4D4D;
+      font-weight: 500;
+
+      &:hover {
+        gap: .2rem;
+      }
+    }
+
+    &:hover .module-btn__text {
+      width: 70px;
+    }
+
+    &__text {
+      transition: .1s ease-in;
+      width: 0;
+      overflow-x: hidden;
+    }
+  }
+}
+
+.store-search {
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  color: $font_color;
+  font-size: 16px;
+  border-radius: 5px;
+  width: 250px;
+  box-shadow: 0px 4px 16px -9px rgba(0, 0, 0, 0.25);
+}
+.module-page {
+  &__title {
+      font-weight: bold;
+    font-size: 22px;
+    font-family: 'Montserrat Alternates', sans-serif;
+
+    &.module-page__title_min {
+      font-size: 18px;
+    }
+  }
+
+  &__term {
+    color: $purple_;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+  }
+
+  &__terms {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &-details {
+    display: flex;
+    gap: 10px;
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+  }
+
+  &__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__header {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__panel {
+    width: 350px;
+  }
+
+  &__price {
+    color: $pink;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  &__btn {
+    margin-bottom: .5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    border: none;
+    padding: 15px;
+    background: $purple;
+    transition: .1s ease-in;
+
+    &.module-page__btn_buyed {
+      background: $blue_gradient;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+  }
+
+  &__body {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__left {
+    flex-basis: 700px;
+  }
+
+  &__right {
+    flex-basis: calc(100% - 750px);
+    width: calc(100% - 750px);
+
+    .modules {
+      margin-top: 1rem;
+    }
+  }
+
+  &__description p {
+    margin-top: .5rem;
+    color: #555555;
+    font-size: 16px;
+  }
+}
